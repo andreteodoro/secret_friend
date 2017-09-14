@@ -3,7 +3,7 @@ FROM ruby:2.3-slim
 RUN apt-get update && apt-get install -qq -y --no-install-recommends \
       build-essential nodejs libpq-dev imagemagick
 
-ENV INSTALL_PATH /nosso_amigo_secreto
+ENV INSTALL_PATH /secret_friend
 
 RUN mkdir -p $INSTALL_PATH
 
