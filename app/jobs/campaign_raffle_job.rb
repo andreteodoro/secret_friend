@@ -12,7 +12,7 @@ class CampaignRaffleJob < ApplicationJob
 
 
     #if results == false
-      TODO: Send mail to owner of campaign
+      #TODO: Send mail to owner of campaign
     #end
   end
 end
