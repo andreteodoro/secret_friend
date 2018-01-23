@@ -1,24 +1,48 @@
-# README
+# Nosso Amigo Secreto
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Nosso Amigo Secreto is a software to help people at the end of the year Secret Santa's party.
+Members of a group or community are randomly assigned a person to whom they give a gift. The identity of the gift giver is a secret not to be revealed.
+Go party with us!
 
-Things you may want to cover:
+## Demo
+[Nosso Amigo Secreto](http://104.236.242.252/)
 
-* Ruby version
+## Screenshots
 
-* System dependencies
+![Home](http://res.cloudinary.com/alteodoro/image/upload/v1516733935/secret_friend/create_campaign.png)
+![Login](http://res.cloudinary.com/alteodoro/image/upload/v1516733935/secret_friend/login.png)
+![Campaigns](http://res.cloudinary.com/alteodoro/image/upload/v1516733935/secret_friend/create_campaign.png)
+![Create Campaign](http://res.cloudinary.com/alteodoro/image/upload/v1516733935/secret_friend/create_campaign.png)
 
-* Configuration
+## Getting Started
 
-* Database creation
+This instructions will give you a copy of the project on your local machine for development and testing.
 
-* Database initialization
+### Installing
 
-* How to run the test suite
+#### Using Docker
+```
+git clone https://github.com/andreteodoro/secret_friend.git
+cd secret_friend
+docker-compose up --build
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Localhost
+```
+git clone https://github.com/andreteodoro/secret_friend.git
+cd secret_friend
+bundle install
+rails s
+```
 
-* Deployment instructions
+### Testing
 
-* ...
+#### Using Docker
+```
+docker-compose run --rm website rspec
+```
+
+#### Localhost
+```
+rspec
+```
