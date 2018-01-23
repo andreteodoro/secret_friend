@@ -72,7 +72,7 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { :host => 'http://localhost:3000' }
+  config.action_mailer.default_url_options = { :host => '104.236.242.252' }
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.smtp_settings = {
     address:              ENV["SMTP_ADDRESS"],
